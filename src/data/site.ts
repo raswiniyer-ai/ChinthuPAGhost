@@ -43,7 +43,7 @@ export const destinations: Destination[] = [
     slug: 'bangkok',
     name: 'Bangkok',
     country: 'Thailand',
-    image: '/img/dest-bangkok.webp',
+    image: `${import.meta.env.BASE_URL}img/dest-bangkok.webp`,
     intro:
       "Bangkok, Thailand's capital, is a vibrant city known for its beautiful temples, bustling markets, tasty street food, and lively nightlife. It's a perfect blend of tradition and modernity.",
     bestTime: 'November to February',
@@ -75,7 +75,7 @@ export const destinations: Destination[] = [
     slug: 'almaty',
     name: 'Almaty',
     country: 'Kazakhstan',
-    image: '/img/dest-almaty.webp',
+    image: `${import.meta.env.BASE_URL}img/dest-almaty.webp`,
     intro:
       "Almaty, Kazakhstan's largest city and former capital, offers a blend of history, nature, and cultural experiences, nestled against the Tien Shan Mountains, making it a vibrant and accessible destination for travellers.",
     bestTime: 'Any time of the year',
@@ -103,7 +103,7 @@ export const destinations: Destination[] = [
     slug: 'azerbaijan',
     name: 'Azerbaijan',
     country: 'Baku & beyond',
-    image: '/img/dest-azerbaijan.webp',
+    image: `${import.meta.env.BASE_URL}img/dest-azerbaijan.webp`,
     intro:
       "Baku, Azerbaijan's capital, is a vibrant city on the Caspian Sea, known for its rich history, modern architecture, and unique blend of cultures. It's a major cultural, economic and political hub of the Caucasus.",
     bestTime: 'Any time of the year',
@@ -131,7 +131,7 @@ export const destinations: Destination[] = [
     slug: 'abu-dhabi',
     name: 'Abu Dhabi',
     country: 'United Arab Emirates',
-    image: '/img/dest-abu-dhabi.webp',
+    image: `${import.meta.env.BASE_URL}img/dest-abu-dhabi.webp`,
     intro:
       'Abu Dhabi is the capital of the United Arab Emirates, known for its stunning blend of modern architecture, cultural landmarks and coastal beauty — home to iconic sites like the Sheikh Zayed Grand Mosque.',
     bestTime: 'November to March',
@@ -172,20 +172,20 @@ export type Pkg = {
 };
 
 export const packages: Pkg[] = [
-  { slug: 'kerala-scenic-escape', region: 'Munnar · Thekkady · Alleppey · Cochin', title: 'Kerala Scenic Escape', nights: '05 Night - 06 Days', image: '/img/pkg-kerala.webp', rating: '5', reviews: '155' },
-  { slug: 'munnar-alleppey-bliss', region: 'Munnar · Alleppey', title: 'Munnar Alleppey Bliss', nights: '03 Night 04 Days', image: '/img/pkg-munnar.webp', rating: '5', reviews: '145' },
-  { slug: 'exploring-baku', region: 'Azerbaijan', title: 'Exploring Baku', nights: '4 Nights 5 Days', image: '/img/pkg-azerbaijan.webp', rating: '5', reviews: '18' },
-  { slug: 'malaysia-package', region: 'Malaysia', title: 'Malaysia Package', nights: '03 Night 04 Days', image: '/img/pkg-malaysia.webp', rating: '5', reviews: '55' },
-  { slug: 'kullu-manali', region: 'Kullu · Manali', title: 'Kullu – Manali', nights: '4N 5D', image: '/img/pkg-kullu-manali.webp', rating: '5', reviews: '35' },
-  { slug: 'vietnam', region: 'Vietnam', title: 'Vietnam', nights: '4N 5D', image: '/img/pkg-vietnam.webp', rating: '5', reviews: '45' },
-  { slug: 'bangkok-pattaya', region: 'Thailand', title: 'Bangkok Pattaya', nights: '3 Nights 4 Days', image: '/img/pkg-bangkok-pattaya.webp', rating: 'Very Good', reviews: '150', blurb: 'Pattaya, a vibrant beach resort town on the Gulf of Thailand, offers a mix of relaxation, nightlife and cultural experiences.' },
+  { slug: 'kerala-scenic-escape', region: 'Munnar · Thekkady · Alleppey · Cochin', title: 'Kerala Scenic Escape', nights: '05 Night - 06 Days', image: `${import.meta.env.BASE_URL}img/pkg-kerala.webp`, rating: '5', reviews: '155' },
+  { slug: 'munnar-alleppey-bliss', region: 'Munnar · Alleppey', title: 'Munnar Alleppey Bliss', nights: '03 Night 04 Days', image: `${import.meta.env.BASE_URL}img/pkg-munnar.webp`, rating: '5', reviews: '145' },
+  { slug: 'exploring-baku', region: 'Azerbaijan', title: 'Exploring Baku', nights: '4 Nights 5 Days', image: `${import.meta.env.BASE_URL}img/pkg-azerbaijan.webp`, rating: '5', reviews: '18' },
+  { slug: 'malaysia-package', region: 'Malaysia', title: 'Malaysia Package', nights: '03 Night 04 Days', image: `${import.meta.env.BASE_URL}img/pkg-malaysia.webp`, rating: '5', reviews: '55' },
+  { slug: 'kullu-manali', region: 'Kullu · Manali', title: 'Kullu – Manali', nights: '4N 5D', image: `${import.meta.env.BASE_URL}img/pkg-kullu-manali.webp`, rating: '5', reviews: '35' },
+  { slug: 'vietnam', region: 'Vietnam', title: 'Vietnam', nights: '4N 5D', image: `${import.meta.env.BASE_URL}img/pkg-vietnam.webp`, rating: '5', reviews: '45' },
+  { slug: 'bangkok-pattaya', region: 'Thailand', title: 'Bangkok Pattaya', nights: '3 Nights 4 Days', image: `${import.meta.env.BASE_URL}img/pkg-bangkok-pattaya.webp`, rating: 'Very Good', reviews: '150', blurb: 'Pattaya, a vibrant beach resort town on the Gulf of Thailand, offers a mix of relaxation, nightlife and cultural experiences.' },
 ];
 
 export const hotDeals: Pkg[] = [
-  { slug: 'kashmir', region: 'Kashmir', title: 'Kashmir', nights: '4N 5D', image: '/img/pkg-kashmir.webp', rating: '5', reviews: '25' },
-  { slug: 'golden-triangle', region: 'Delhi · Agra · Jaipur', title: 'Golden Triangle', nights: '4N 5D', image: '/img/pkg-golden-triangle.webp', rating: '5', reviews: '85' },
-  { slug: 'hyderabad', region: 'Hyderabad', title: 'Hyderabad Tour Days', nights: '3 Nights 4 Days', image: '/img/pkg-hyderabad.webp', rating: '5', reviews: '65' },
-  { slug: 'dubai', region: 'Dubai', title: 'Dubai', nights: '4 Nights 5 Days', image: '/img/pkg-dubai.webp', rating: '5', reviews: '45' },
+  { slug: 'kashmir', region: 'Kashmir', title: 'Kashmir', nights: '4N 5D', image: `${import.meta.env.BASE_URL}img/pkg-kashmir.webp`, rating: '5', reviews: '25' },
+  { slug: 'golden-triangle', region: 'Delhi · Agra · Jaipur', title: 'Golden Triangle', nights: '4N 5D', image: `${import.meta.env.BASE_URL}img/pkg-golden-triangle.webp`, rating: '5', reviews: '85' },
+  { slug: 'hyderabad', region: 'Hyderabad', title: 'Hyderabad Tour Days', nights: '3 Nights 4 Days', image: `${import.meta.env.BASE_URL}img/pkg-hyderabad.webp`, rating: '5', reviews: '65' },
+  { slug: 'dubai', region: 'Dubai', title: 'Dubai', nights: '4 Nights 5 Days', image: `${import.meta.env.BASE_URL}img/pkg-dubai.webp`, rating: '5', reviews: '45' },
 ];
 
 export const trending: Pkg[] = [
@@ -194,7 +194,7 @@ export const trending: Pkg[] = [
     region: 'China',
     title: 'Canton Fair',
     nights: '08 Days 07 Nights',
-    image: '/img/pkg-canton.webp',
+    image: `${import.meta.env.BASE_URL}img/pkg-canton.webp`,
     rating: '5',
     reviews: '20',
     trending: true,
@@ -206,7 +206,7 @@ export const trending: Pkg[] = [
     region: 'Da Nang',
     title: 'Da Nang – Hanoi',
     nights: '5 Nights 6 Days',
-    image: '/img/pkg-danang.webp',
+    image: `${import.meta.env.BASE_URL}img/pkg-danang.webp`,
     rating: '5',
     reviews: '22',
     trending: true,
@@ -215,18 +215,18 @@ export const trending: Pkg[] = [
 ];
 
 export const reviews = [
-  { name: 'Ashwin Ravisankar', text: 'I had an amazing experience with Live the Day Holidays, and I can confidently say they are one of the best tour organizers out there! Our Maldives trip faced a major hurdle due to unexpected flight cancellations.', img: '/img/review-ashwin.png' },
+  { name: 'Ashwin Ravisankar', text: 'I had an amazing experience with Live the Day Holidays, and I can confidently say they are one of the best tour organizers out there! Our Maldives trip faced a major hurdle due to unexpected flight cancellations.', img: `${import.meta.env.BASE_URL}img/review-ashwin.png` },
   { name: 'Annina Burgherr', text: 'Very friendly and helpful employees, catered to our needs and wishes, communication always worked well. Prices are good too! Would highly recommend if you\u2019re planning on doing a trip in Kerala. Thanks for taking care of us like your family.' },
-  { name: 'Bipin TV', text: 'Our honeymoon in Bali was everything we dreamed of and more, and we owe a huge thank you to you and the Live The Day Holidays team! We were so incredibly happy and satisfied with every aspect of the trip.', img: '/img/review-bipin.png' },
-  { name: 'Anjana Remesh', text: 'I had an amazing experience with Live the day holiday, on my recent family trip to Phuket! Everything was well-organized — from airport transfers to hotel bookings and daily activities. Smooth communication.', img: '/img/review-anjana.png' },
+  { name: 'Bipin TV', text: 'Our honeymoon in Bali was everything we dreamed of and more, and we owe a huge thank you to you and the Live The Day Holidays team! We were so incredibly happy and satisfied with every aspect of the trip.', img: `${import.meta.env.BASE_URL}img/review-bipin.png` },
+  { name: 'Anjana Remesh', text: 'I had an amazing experience with Live the day holiday, on my recent family trip to Phuket! Everything was well-organized — from airport transfers to hotel bookings and daily activities. Smooth communication.', img: `${import.meta.env.BASE_URL}img/review-anjana.png` },
   { name: 'Lakshmipriya Asokan', text: 'We had contacted Live The Day Holidays for our trips to Vagamon and Munnar. We asked them for the best stay possible for family for a reasonable price and they provided us with the same. Their services are fast and the best.' },
-  { name: 'Poornima Prasad', text: 'Awesome experience with live the day holidays. Team tried their very best to get us the best package and hotel deals amidst rising prices in the seasonal rush. Very cooperative team and polite service.', img: '/img/review-poornima.png' },
-  { name: 'Neethu P', text: 'The package tour was exceptionally well-organized, covering all the must-see attractions with comfortable transportation and knowledgeable guides. Highly recommended for hassle-free travel. Our family enjoyed every moment.', img: '/img/review-neethu.png' },
+  { name: 'Poornima Prasad', text: 'Awesome experience with live the day holidays. Team tried their very best to get us the best package and hotel deals amidst rising prices in the seasonal rush. Very cooperative team and polite service.', img: `${import.meta.env.BASE_URL}img/review-poornima.png` },
+  { name: 'Neethu P', text: 'The package tour was exceptionally well-organized, covering all the must-see attractions with comfortable transportation and knowledgeable guides. Highly recommended for hassle-free travel. Our family enjoyed every moment.', img: `${import.meta.env.BASE_URL}img/review-neethu.png` },
   { name: 'Indu Indira', text: 'I recently organised a trip for a foreign friend with Live the Day, covering both North and South India, and the experience was fantastic. The package, which included full-time cab service and hotels, was surprisingly affordable.' },
   { name: 'John Jose', text: 'The tour was well-organized, with timely pickups and knowledgeable guides. The itinerary covered key spots without feeling rushed — and the team stayed reachable through the whole trip.' },
-  { name: 'Neethu Ashokan', text: 'We had a great experience with Live the Day Holidays. We opted for a one day boat trip at Ashtamudi lake, Kollam. We decided just a day prior with so many last minute changes, but the team was totally supportive.', img: '/img/review-1.png' },
-  { name: 'Adarsh Mohan', text: 'I recently did a vacation trip to Goa with Live the Day Holidays and the whole experience was really great. Everything was taken care of by the coordinator and made sure we were comfortable all the time.', img: '/img/review-2.png' },
-  { name: 'Rajeswari Sr', text: 'We had an amazing experience with the Live the Day team for our Andaman trip. It was so smooth and friendly to accommodate our requirements and plan the trip by Chintu Jose & Deepa for our family.', img: '/img/review-3.png' },
+  { name: 'Neethu Ashokan', text: 'We had a great experience with Live the Day Holidays. We opted for a one day boat trip at Ashtamudi lake, Kollam. We decided just a day prior with so many last minute changes, but the team was totally supportive.', img: `${import.meta.env.BASE_URL}img/review-1.png` },
+  { name: 'Adarsh Mohan', text: 'I recently did a vacation trip to Goa with Live the Day Holidays and the whole experience was really great. Everything was taken care of by the coordinator and made sure we were comfortable all the time.', img: `${import.meta.env.BASE_URL}img/review-2.png` },
+  { name: 'Rajeswari Sr', text: 'We had an amazing experience with the Live the Day team for our Andaman trip. It was so smooth and friendly to accommodate our requirements and plan the trip by Chintu Jose & Deepa for our family.', img: `${import.meta.env.BASE_URL}img/review-3.png` },
 ];
 
 export const about = {
@@ -273,12 +273,12 @@ export const channelPartner = {
 };
 
 export const blogs = [
-  { tag: 'Things To Do', image: '/img/blog-japan.webp', title: 'How to Register as a Tourist for Japan: Easy Visit Japan Web Guide', author: 'Jesica Koli', date: '02 December 2025', read: '3 min read', excerpt: 'The paperwork is the part nobody plans for. Here is the whole registration walkthrough, in order, with the bits people get stuck on.' },
-  { tag: 'Travel', image: '/img/blog-varkala.webp', title: 'Ultimate Road Trip Ideas in 2025 for Every Adventurer', author: 'Jesica Koli', date: '02 December 2025', read: '3 min read', excerpt: 'From coastal Kerala to the Caucasus mountains — routes worth clearing a long weekend for.' },
-  { tag: 'Things To Do', image: '/img/blog-streetfood.webp', title: 'Bangkok in Three Nights: Temples, Markets and Street Food', author: 'Jesica Koli', date: '02 December 2025', read: '4 min read', excerpt: 'Wat Pho at opening time, Chatuchak on Saturday, and the riverside at sunset — a first-timer\u2019s rhythm for Bangkok.' },
-  { tag: 'Travel', image: '/img/dest-almaty.webp', title: 'Kazakhstan for Indians: Almaty Without the Guesswork', author: 'Jesica Koli', date: '02 December 2025', read: '4 min read', excerpt: 'Visa on arrival, the cable car to Shymbulak, and why the Green Bazaar deserves two hours minimum.' },
-  { tag: 'Travel', image: '/img/dest-azerbaijan.webp', title: 'Azerbaijan: Baku\u2019s Old City and the Road to Khinaliq', author: 'Jesica Koli', date: '02 December 2025', read: '5 min read', excerpt: 'Flame Towers, shebeke glass in Sheki, and a village above the clouds.' },
-  { tag: 'Things To Do', image: '/img/pkg-canton.webp', title: 'Canton Fair 2025: A Buyer\u2019s Packing and Planning List', author: 'Jesica Koli', date: '02 December 2025', read: '3 min read', excerpt: 'Phase 2 and 3 dates, the metro route, and how to walk the complex without losing a day.' },
+  { tag: 'Things To Do', image: `${import.meta.env.BASE_URL}img/blog-japan.webp`, title: 'How to Register as a Tourist for Japan: Easy Visit Japan Web Guide', author: 'Jesica Koli', date: '02 December 2025', read: '3 min read', excerpt: 'The paperwork is the part nobody plans for. Here is the whole registration walkthrough, in order, with the bits people get stuck on.' },
+  { tag: 'Travel', image: `${import.meta.env.BASE_URL}img/blog-varkala.webp`, title: 'Ultimate Road Trip Ideas in 2025 for Every Adventurer', author: 'Jesica Koli', date: '02 December 2025', read: '3 min read', excerpt: 'From coastal Kerala to the Caucasus mountains — routes worth clearing a long weekend for.' },
+  { tag: 'Things To Do', image: `${import.meta.env.BASE_URL}img/blog-streetfood.webp`, title: 'Bangkok in Three Nights: Temples, Markets and Street Food', author: 'Jesica Koli', date: '02 December 2025', read: '4 min read', excerpt: 'Wat Pho at opening time, Chatuchak on Saturday, and the riverside at sunset — a first-timer\u2019s rhythm for Bangkok.' },
+  { tag: 'Travel', image: `${import.meta.env.BASE_URL}img/dest-almaty.webp`, title: 'Kazakhstan for Indians: Almaty Without the Guesswork', author: 'Jesica Koli', date: '02 December 2025', read: '4 min read', excerpt: 'Visa on arrival, the cable car to Shymbulak, and why the Green Bazaar deserves two hours minimum.' },
+  { tag: 'Travel', image: `${import.meta.env.BASE_URL}img/dest-azerbaijan.webp`, title: 'Azerbaijan: Baku\u2019s Old City and the Road to Khinaliq', author: 'Jesica Koli', date: '02 December 2025', read: '5 min read', excerpt: 'Flame Towers, shebeke glass in Sheki, and a village above the clouds.' },
+  { tag: 'Things To Do', image: `${import.meta.env.BASE_URL}img/pkg-canton.webp`, title: 'Canton Fair 2025: A Buyer\u2019s Packing and Planning List', author: 'Jesica Koli', date: '02 December 2025', read: '3 min read', excerpt: 'Phase 2 and 3 dates, the metro route, and how to walk the complex without losing a day.' },
 ];
 
 export const quickLinks = ['Home', 'Destinations', 'Holiday Packages', 'Activity', 'Hotel', 'About Us', 'Contact Us'];

@@ -8,7 +8,7 @@ export const About: React.FC = () => (
     <section className="band-photo" style={{ paddingTop: 0 }}>
       <div className="wrap">
         <figure>
-          <img src="/img/about-kochi.webp" alt="Kochi, Kerala — home of Live The Day Holidays" />
+          <img src={`${import.meta.env.BASE_URL}img/about-kochi.webp`} alt="Kochi, Kerala — home of Live The Day Holidays" />
           <figcaption>
             <span>Kochi · Kerala</span>
             <p>Ten years on the ground, one office on the coast, and travellers we still hear from.</p>
@@ -345,7 +345,7 @@ export const Blogs: React.FC = () => (
         Guides we write for our own travellers — visas, seasons, route order and the things worth skipping.
       </p>
 
-      <article className="trend-card" style={{ marginTop: 34, backgroundImage: `url(${blogs[0] && '/img/pkg-bangkok-pattaya.webp'})`, minHeight: 380 }}>
+      <article className="trend-card" style={{ marginTop: 34, backgroundImage: `url(${blogs[0] && `${import.meta.env.BASE_URL}img/pkg-bangkok-pattaya.webp`})`, minHeight: 380 }}>
         <div className="trend-inner">
           <span className="stamp" style={{ borderColor: 'rgba(255,253,248,0.5)', color: '#fffdf8' }}>
             Featured · {blogs[0].tag}

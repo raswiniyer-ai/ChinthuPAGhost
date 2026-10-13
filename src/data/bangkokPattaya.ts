@@ -3,7 +3,7 @@ export const bp = {
   slug: 'bangkok-pattaya',
   title: 'Bangkok Pattaya',
   country: 'Thailand',
-  hero: '/img/pkg-bangkok-pattaya.webp',
+  hero: `${import.meta.env.BASE_URL}img/pkg-bangkok-pattaya.webp`,
   ratingLabel: 'Very Good',
   reviews: '150 reviews',
   facts: [

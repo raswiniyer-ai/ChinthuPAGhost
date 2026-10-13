@@ -15,7 +15,7 @@ export const Stars: React.FC<{ value?: string; reviews?: string }> = ({ reviews 
 export const HeroArt: React.FC = () => (
   <div className="hero-collage">
     <figure className="hc-main">
-      <img src="/img/pkg-bangkok-pattaya.webp" alt="Pattaya coastline, Thailand" />
+      <img src={`${import.meta.env.BASE_URL}img/pkg-bangkok-pattaya.webp`} alt="Pattaya coastline, Thailand" />
       <figcaption className="hc-tag">
         <b>Bangkok · Pattaya</b>
         <span>4N / 5D · from ₹38,000</span>
@@ -23,14 +23,14 @@ export const HeroArt: React.FC = () => (
     </figure>
     <div className="hc-side">
       <figure>
-        <img src="/img/dest-almaty.webp" alt="Big Almaty Lake, Kazakhstan" loading="lazy" />
+        <img src={`${import.meta.env.BASE_URL}img/dest-almaty.webp`} alt="Big Almaty Lake, Kazakhstan" loading="lazy" />
         <figcaption className="hc-tag">
           <b>Almaty</b>
           <span>Kazakhstan · 4N / 5D</span>
         </figcaption>
       </figure>
       <figure>
-        <img src="/img/pkg-kerala.webp" alt="Houseboat on the Kerala backwaters" loading="lazy" />
+        <img src={`${import.meta.env.BASE_URL}img/pkg-kerala.webp`} alt="Houseboat on the Kerala backwaters" loading="lazy" />
         <figcaption className="hc-tag">
           <b>Kerala</b>
           <span>Backwaters · 5N / 6D</span>

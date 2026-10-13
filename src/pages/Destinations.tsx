@@ -34,9 +34,9 @@ export const DestinationsIndex: React.FC = () => {
 
         <PhotoStrip
           items={[
-            { src: '/img/dest-abu-dhabi.webp', label: 'Abu Dhabi', note: 'UAE · Grand Mosque' },
-            { src: '/img/dest-bangkok.webp', label: 'Bangkok', note: 'Thailand · temples & markets' },
-            { src: '/img/pkg-vietnam.webp', label: 'Ha Long Bay', note: 'Vietnam · cruise nights' },
+            { src: `${import.meta.env.BASE_URL}img/dest-abu-dhabi.webp`, label: 'Abu Dhabi', note: 'UAE · Grand Mosque' },
+            { src: `${import.meta.env.BASE_URL}img/dest-bangkok.webp`, label: 'Bangkok', note: 'Thailand · temples & markets' },
+            { src: `${import.meta.env.BASE_URL}img/pkg-vietnam.webp`, label: 'Ha Long Bay', note: 'Vietnam · cruise nights' },
           ]}
         />
 

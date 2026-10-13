@@ -31,9 +31,9 @@ export const PackagesIndex: React.FC = () => {
 
         <PhotoStrip
           items={[
-            { src: '/img/pkg-bangkok-pattaya.webp', label: 'Thailand', note: 'Bangkok · Pattaya · Phuket' },
-            { src: '/img/pkg-kerala.webp', label: 'Kerala', note: 'Munnar · Alleppey · Kochi' },
-            { src: '/img/dest-azerbaijan.webp', label: 'Azerbaijan', note: 'Baku · Gabala · Sheki' },
+            { src: `${import.meta.env.BASE_URL}img/pkg-bangkok-pattaya.webp`, label: 'Thailand', note: 'Bangkok · Pattaya · Phuket' },
+            { src: `${import.meta.env.BASE_URL}img/pkg-kerala.webp`, label: 'Kerala', note: 'Munnar · Alleppey · Kochi' },
+            { src: `${import.meta.env.BASE_URL}img/dest-azerbaijan.webp`, label: 'Azerbaijan', note: 'Baku · Gabala · Sheki' },
           ]}
         />
 

@@ -14,7 +14,7 @@ import './styles/mobile.css';
 
 export const App: React.FC = () => (
   <EnquiryProvider>
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Nav />
       <main>
         <Routes>
