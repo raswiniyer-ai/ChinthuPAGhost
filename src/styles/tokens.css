@@ -1,0 +1,109 @@
+/* Live The Day — design tokens
+   Direction: a Kerala travel desk, not an airline kiosk.
+   Sand paper, monsoon teal, laterite red. Editorial serif over clean sans. */
+
+:root {
+  --ink: #0b1f1c;
+  --ink-soft: #17332f;
+  --ink-mute: rgba(11, 31, 28, 0.62);
+  --paper: #f6f0e4;
+  --paper-2: #ece2d0;
+  --paper-3: #e3d6bf;
+  --clay: #c1502e;
+  --clay-deep: #9d3d20;
+  --saffron: #eda43b;
+  --jade: #12756a;
+  --lagoon: #0c4e4b;
+  --line: rgba(11, 31, 28, 0.14);
+  --line-strong: rgba(11, 31, 28, 0.28);
+  --white: #fffdf8;
+
+  --font-display: 'Fraunces', 'Iowan Old Style', Georgia, serif;
+  --font-body: 'Instrument Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --r-sm: 6px;
+  --r-md: 12px;
+  --r-lg: 20px;
+  --r-pill: 999px;
+
+  --maxw: 1240px;
+  --gut: clamp(18px, 4vw, 52px);
+
+  --shadow-1: 0 1px 2px rgba(11, 31, 28, 0.06), 0 12px 32px -18px rgba(11, 31, 28, 0.35);
+  --shadow-2: 0 2px 4px rgba(11, 31, 28, 0.08), 0 28px 60px -28px rgba(11, 31, 28, 0.45);
+
+  --t-fast: 160ms cubic-bezier(0.2, 0.7, 0.3, 1);
+  --t-med: 320ms cubic-bezier(0.2, 0.7, 0.3, 1);
+  --t-slow: 720ms cubic-bezier(0.16, 1, 0.3, 1);
+
+  --nav-h: 74px;
+
+  /* footer band — a dark band with cream type in BOTH themes,
+     so it never collides with the page palette when --ink flips */
+  --foot-bg: #0b1f1c;
+  --foot-ink: #fffdf8;
+  --foot-ink-soft: rgba(239, 232, 218, 0.74);
+  --foot-ink-mute: rgba(239, 232, 218, 0.6);
+  --foot-line: rgba(239, 232, 218, 0.18);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #f4efe3;
+    --ink-soft: #d8d2c4;
+    --ink-mute: rgba(244, 239, 227, 0.62);
+    --paper: #08201d;
+    --paper-2: #0d2a26;
+    --paper-3: #123330;
+    --line: rgba(244, 239, 227, 0.16);
+    --line-strong: rgba(244, 239, 227, 0.3);
+    --white: #0b2521;
+    --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.4), 0 14px 34px -20px rgba(0, 0, 0, 0.8);
+    --shadow-2: 0 2px 6px rgba(0, 0, 0, 0.45), 0 30px 64px -30px rgba(0, 0, 0, 0.9);
+
+    --foot-bg: #04130f;
+    --foot-ink: #f6f0e4;
+    --foot-ink-soft: rgba(246, 240, 228, 0.76);
+    --foot-ink-mute: rgba(246, 240, 228, 0.58);
+    --foot-line: rgba(246, 240, 228, 0.16);
+  }
+}
+
+html[data-theme='light'] {
+  --ink: #0b1f1c;
+  --ink-soft: #17332f;
+  --ink-mute: rgba(11, 31, 28, 0.62);
+  --paper: #f6f0e4;
+  --paper-2: #ece2d0;
+  --paper-3: #e3d6bf;
+  --line: rgba(11, 31, 28, 0.14);
+  --line-strong: rgba(11, 31, 28, 0.28);
+  --white: #fffdf8;
+
+  /* explicit, so an old saved theme can never fight the OS preference */
+  --foot-bg: #0b1f1c;
+  --foot-ink: #fffdf8;
+  --foot-ink-soft: rgba(239, 232, 218, 0.74);
+  --foot-ink-mute: rgba(239, 232, 218, 0.6);
+  --foot-line: rgba(239, 232, 218, 0.18);
+}
+
+html[data-theme='dark'] {
+  --ink: #f4efe3;
+  --ink-soft: #d8d2c4;
+  --ink-mute: rgba(244, 239, 227, 0.62);
+  --paper: #08201d;
+  --paper-2: #0d2a26;
+  --paper-3: #123330;
+  --line: rgba(244, 239, 227, 0.16);
+  --line-strong: rgba(244, 239, 227, 0.3);
+  --white: #0b2521;
+
+  /* footer stays a distinctly deeper band than the page */
+  --foot-bg: #04130f;
+  --foot-ink: #f6f0e4;
+  --foot-ink-soft: rgba(246, 240, 228, 0.76);
+  --foot-ink-mute: rgba(246, 240, 228, 0.58);
+  --foot-line: rgba(246, 240, 228, 0.16);
+}
